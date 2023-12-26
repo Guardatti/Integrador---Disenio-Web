@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins';
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #222222, #176f88);
+}
+
+@media (min-width: 320px) and (max-width: 575px){
+    .conteiner-img{
+        display: none
+    }
+
+    .conteiner-box{
+        width: 100%;
+        padding: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    .conteiner-box .box{
+        width: 300px;
+        height: 600px;
+        background: #ffffff;
+        border-radius: 15px;
+    }
+
+    .conteiner-box .box form .header{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 5%;
+        width: 100%;
+    }
+
+    .conteiner-box .box form .header i{
+        margin-left: 10px;
+        color: #101010;
+    }
+
+    .conteiner-box .box form .icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15%;
+        width: 100%;
+    }
+    
+    .conteiner-box .box form .icon img{
+        width: 90px;
+        border-radius: 50px;
+    }
+
+    .conteiner-box .box form .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15%;
+        width: 100%;
+    }
+    
+    .conteiner-box .box form .text h2{
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    .conteiner-box .box form .input-name,
+    .conteiner-box .box form .input-surname,
+    .conteiner-box .box form .input-user,
+    .conteiner-box .box form .input-email,
+    .conteiner-box .box form .input-password,
+    .conteiner-box .box form .input-password-repeat{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 8%;
+    }
+
+    .conteiner-box .box form .input-name input,
+    .conteiner-box .box form .input-surname input,
+    .conteiner-box .box form .input-user input,
+    .conteiner-box .box form .input-email input,
+    .conteiner-box .box form .input-password input,
+    .conteiner-box .box form .input-password-repeat input{
+        border-bottom: 1px solid black;
+        width: 200px;
+    }
+
+    .conteiner-box .box form .button-login,
+    .conteiner-box .box form .back{
+        height: 9%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteiner-box .box form .button-login button{
+        background-color: black;
+        color: white;
+        width: 200px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .conteiner-box .box form .back a{
+        color: blue;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+    .conteiner-img{
+        display: none
+    }
+
+    .conteiner-box{
+        width: 100%;
+        padding: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    .conteiner-box .box{
+        width: 300px;
+        height: 600px;
+        background: #ffffff;
+        border-radius: 15px;
+    }
+
+    .conteiner-box .box form .header{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 5%;
+        width: 100%;
+    }
+
+    .conteiner-box .box form .header i{
+        margin-left: 10px;
+        color: #101010;
+    }
+
+    .conteiner-box .box form .icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15%;
+        width: 100%;
+    }
+    
+    .conteiner-box .box form .icon img{
+        width: 90px;
+        border-radius: 50px;
+    }
+
+    .conteiner-box .box form .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15%;
+        width: 100%;
+    }
+    
+    .conteiner-box .box form .text h2{
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    .conteiner-box .box form .input-name,
+    .conteiner-box .box form .input-surname,
+    .conteiner-box .box form .input-user,
+    .conteiner-box .box form .input-email,
+    .conteiner-box .box form .input-password,
+    .conteiner-box .box form .input-password-repeat{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 8%;
+    }
+
+    .conteiner-box .box form .input-name input,
+    .conteiner-box .box form .input-surname input,
+    .conteiner-box .box form .input-user input,
+    .conteiner-box .box form .input-email input,
+    .conteiner-box .box form .input-password input,
+    .conteiner-box .box form .input-password-repeat input{
+        border-bottom: 1px solid black;
+        width: 200px;
+    }
+
+    .conteiner-box .box form .button-login,
+    .conteiner-box .box form .back{
+        height: 9%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteiner-box .box form .button-login button{
+        background-color: black;
+        color: white;
+        width: 200px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .conteiner-box .box form .back a{
+        color: blue;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .conteiner-img{
+        width: 45%;
+        padding: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteiner-img .box-img{
+        width: 500px;
+        height: 550px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteiner-img .box-img img{
+        width: 600px;
+        height: 600px;
+    }
+
+    .conteiner-box{
+        width: 55%;
+        padding: 5;
+        display: flex;
+        justify-content: start;
+        align-items: center;        
+    }
+
+    .conteiner-box .box{
+        width: 400px;
+        height: 600px;
+        background: #ffffff;
+        border-radius: 15px;
+    }
+
+    .conteiner-box .box form .header{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 5%;
+        width: 100%;
+    }
+
+    .conteiner-box .box form .header i{
+        margin-left: 10px;
+        color: #101010;
+    }
+
+    .conteiner-box .box form .icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15%;
+        width: 100%;
+    }
+    
+    .conteiner-box .box form .icon img{
+        width: 90px;
+        border-radius: 50px;
+    }
+
+    .conteiner-box .box form .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15%;
+        width: 100%;
+    }
+    
+    .conteiner-box .box form .text h2{
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    .conteiner-box .box form .input-name,
+    .conteiner-box .box form .input-surname,
+    .conteiner-box .box form .input-user,
+    .conteiner-box .box form .input-email,
+    .conteiner-box .box form .input-password,
+    .conteiner-box .box form .input-password-repeat{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 8%;
+    }
+
+    .conteiner-box .box form .input-name input,
+    .conteiner-box .box form .input-surname input,
+    .conteiner-box .box form .input-user input,
+    .conteiner-box .box form .input-email input,
+    .conteiner-box .box form .input-password input,
+    .conteiner-box .box form .input-password-repeat input{
+        border-bottom: 1px solid black;
+        width: 350px;
+    }
+
+    .conteiner-box .box form .button-login,
+    .conteiner-box .box form .back{
+        height: 9%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteiner-box .box form .button-login button{
+        background-color: black;
+        color: white;
+        width: 200px;
+        height: 30px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .conteiner-box .box form .button-login button:hover{
+        background-color: #383838;
+    }
+
+    .conteiner-box .box form .back a{
+        color: blue;
+        font-size: 16px;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .conteiner-img{
+        width: 45%;
+        padding: 15;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .conteiner-img .box-img{
+        width: 500px;
+        height: 550px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteiner-img .box-img img{
+        width: 600px;
+        height: 600px;
+    }
+
+    .conteiner-box{
+        width: 55%;
+        padding: 15;
+        display: flex;
+        justify-content: start;
+        align-items: center;        
+    }
+
+    .conteiner-box .box{
+        width: 500px;
+        height: 600px;
+        background: #ffffff;
+        border-radius: 15px;
+    }
+
+    .conteiner-box .box form .header{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 5%;
+        width: 100%;
+    }
+
+    .conteiner-box .box form .header i{
+        margin-left: 10px;
+        color: #101010;
+    }
+
+    .conteiner-box .box form .icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15%;
+        width: 100%;
+    }
+    
+    .conteiner-box .box form .icon img{
+        width: 90px;
+        border-radius: 50px;
+    }
+
+    .conteiner-box .box form .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15%;
+        width: 100%;
+    }
+    
+    .conteiner-box .box form .text h2{
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    .conteiner-box .box form .input-name,
+    .conteiner-box .box form .input-surname,
+    .conteiner-box .box form .input-user,
+    .conteiner-box .box form .input-email,
+    .conteiner-box .box form .input-password,
+    .conteiner-box .box form .input-password-repeat{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 8%;
+    }
+
+    .conteiner-box .box form .input-name input,
+    .conteiner-box .box form .input-surname input,
+    .conteiner-box .box form .input-user input,
+    .conteiner-box .box form .input-email input,
+    .conteiner-box .box form .input-password input,
+    .conteiner-box .box form .input-password-repeat input{
+        border-bottom: 1px solid black;
+        width: 350px;
+    }
+
+    .conteiner-box .box form .button-login,
+    .conteiner-box .box form .back{
+        height: 9%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteiner-box .box form .button-login button{
+        background-color: black;
+        color: white;
+        width: 200px;
+        height: 30px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .conteiner-box .box form .button-login button:hover{
+        background-color: #383838;
+    }
+
+    .conteiner-box .box form .back a{
+        color: blue;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1200px){
+    .conteiner-img{
+        width: 45%;
+        padding: 5;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .conteiner-img .box-img{
+        width: 500px;
+        height: 550px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteiner-img .box-img img{
+        width: 600px;
+        height: 600px;
+    }
+
+    .conteiner-box{
+        width: 55%;
+        padding: 5;
+        display: flex;
+        justify-content: start;
+        align-items: center;        
+    }
+
+    .conteiner-box .box{
+        width: 500px;
+        height: 600px;
+        background: #ffffff;
+        border-radius: 15px;
+    }
+
+    .conteiner-box .box form .header{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 5%;
+        width: 100%;
+    }
+
+    .conteiner-box .box form .header i{
+        margin-left: 10px;
+        color: #101010;
+    }
+
+    .conteiner-box .box form .icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15%;
+        width: 100%;
+    }
+    
+    .conteiner-box .box form .icon img{
+        width: 90px;
+        border-radius: 50px;
+    }
+
+    .conteiner-box .box form .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15%;
+        width: 100%;
+    }
+    
+    .conteiner-box .box form .text h2{
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    .conteiner-box .box form .input-name,
+    .conteiner-box .box form .input-surname,
+    .conteiner-box .box form .input-user,
+    .conteiner-box .box form .input-email,
+    .conteiner-box .box form .input-password,
+    .conteiner-box .box form .input-password-repeat{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 8%;
+    }
+
+    .conteiner-box .box form .input-name input,
+    .conteiner-box .box form .input-surname input,
+    .conteiner-box .box form .input-user input,
+    .conteiner-box .box form .input-email input,
+    .conteiner-box .box form .input-password input,
+    .conteiner-box .box form .input-password-repeat input{
+        border-bottom: 1px solid black;
+        width: 350px;
+    }
+
+    .conteiner-box .box form .button-login,
+    .conteiner-box .box form .back{
+        height: 9%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteiner-box .box form .button-login button{
+        background-color: black;
+        color: white;
+        width: 200px;
+        height: 30px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .conteiner-box .box form .button-login button:hover{
+        background-color: #383838;
+    }
+
+    .conteiner-box .box form .back a{
+        color: blue;
+        font-size: 16px;
+    }
+}
